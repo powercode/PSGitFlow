@@ -1,0 +1,3 @@
+﻿if (Get-Module PSCompletion){
+
+}

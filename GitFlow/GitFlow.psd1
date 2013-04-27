@@ -40,7 +40,7 @@ CLRVersion = ''
 ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @('PSCompletion')
+#RequiredModules = @('')
 
 # Assemblies that must be loaded prior to importing this module
 RequiredAssemblies = @()
@@ -58,8 +58,13 @@ FormatsToProcess = @()
 NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = @(
-	New-GitFlowFeature
+FunctionsToExport = @(	
+    'Start-GitFlowFeature'
+    'Complete-GitFlowFeature'
+    'Publish-GitFlowFeature'
+    'Trace-GitFlowFeature'
+    'Get-GitFlowFeature'
+    'Switch-GitFlowFeature'
 )
 
 # Cmdlets to export from this module
@@ -70,7 +75,12 @@ VariablesToExport = @()
 
 # Aliases to export from this module
 AliasesToExport = @(
-
+    'stgff'
+    'cpgff'
+    'pugff'
+    'trgff'
+    'ggff' 
+    'swgff'
 )
 
 # List of all modules packaged with this module
